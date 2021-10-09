@@ -1,0 +1,47 @@
+RWplus potential mannual  
+*******************************
+A orientation-dependent atomic potential from random-walk ideal chain reference state 
+package version 1.0
+
+1. Introduction.
+
+   RWplus is orientation-dependent atomic potential for protein structure modeling and structure 
+   decoy recognition. It is calculated from 1,383 high-resolution PDB structures using an 
+   ideal random-walk chain as the reference state. The RW potential has been extensively 
+   optimized and tested on a variety of protein structure decoy sets and demonstrates a 
+   significant power in protein structure recognition and a strong correlation with the 
+   RMSD of decoys to the native structures. 
+   
+
+   The package includes following files:
+
+       1) calRWplus   : The executable program to calculate RW score;
+       2) rw.dat      : The RW potential data file;
+       3) scb.dat     : The RW potential data file;
+       4) pro.pdb     : The example pdb file;
+       5) readme      : Readme file.
+
+2. Installation.
+
+   You need to download the "calRWplus.tar.gz" file and unpack the files by running "tar -xzf calRWplus.tar.gz".
+   Have "calRWplus" and "rw.dat" and "scb.dat" files in the same folder.
+
+3. Usage.
+
+   Example: ./calRWplus pro.pdb
+   Result should be: RW potential =   -18960.201548 kcal/mol   
+
+4. Contact.
+
+   For question and comments, please contact: 
+   Jian Zhang (jianzha@umich.edu) or 
+   Yang Zhang (zhng@umich.edu).
+
+5. Reference.
+
+   Please cite following paper when you use the RWplus potential:
+
+   Jian Zhang and Yang Zhang, A Orientation-Dependent Atomic 
+   Potential Derived from Random-Walk Ideal Chain Reference 
+   State for Protein Fold Selection and Structure Prediction (2009) submitted. 
+
